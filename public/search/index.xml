@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Searches on Abdul Shukor</title>
+    <link>http://localhost:1313/search/</link>
+    <description>Recent content in Searches on Abdul Shukor</description>
+    <image>
+      <title>Abdul Shukor</title>
+      <url>https://abdulshukor.com/cloud-blue-logo.jpeg</url>
+      <link>https://abdulshukor.com/cloud-blue-logo.jpeg</link>
+    </image>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/search/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/search/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/search/search/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

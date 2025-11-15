@@ -1,4 +1,97 @@
-baseURL: https://example.org/
-languageCode: en-us
-title: My New Hugo Site
-theme: ["PaperMod"]
+baseURL: "https://abdulshukor.com/"
+title: Abdul Shukor
+theme: PaperMod
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: true
+buildExpired: true
+pygmentsUseClasses: true
+
+ignoreLogs: ["warning-goldmark-raw-html"]
+
+services:
+  googleAnalytics:
+    ID: G-XXXXXXX
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # To turn on Google Analytics, Open Graph, Twitter cards, and schema.
+  title: Abdul Shukor - Blog
+  description: "Writing about my learning in tech."
+  keywords:
+    [Kubernetes, Linux, Cloud, Blog, Portfolio, CV, DevOps, aws, Productivity, vim, neovim]
+  author: Abdul Shukor
+  images: ["https://abdulshukor.com/cloud-logo.jpeg"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: false
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: true
+  disableSpecial1stPost: true
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  # profile-mode
+  profileMode:
+    enabled: false # Setting explicitly
+    title: Kubernetes
+    subtitle: "Kubernetes"
+    imageUrl: "https://github.com/abdulshukor/blog/blob/main/static/logo.png"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+    buttons:
+      - name: Blog
+        url: archives
+      - name: Tags
+        url: tags
+
+  cover:
+    hidden: false 
+    hiddenInList: false 
+    hiddenInSingle: true 
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+    
+menu:
+  main:
+    - identifier: About
+      name: "About"
+      url: /aboutme/
+      weight: 10
+    - identifier: Tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: "Index"
+      name: "Index"
+      url: /archives/
+      weight: 30
+    - identifier: Search
+      name: 🔍
+      url: /search/
+      weight: 50
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # Is Necessary
