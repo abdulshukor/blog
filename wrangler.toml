@@ -2,11 +2,11 @@ name = "abdulshukor"
 compatibility_date = "2025-11-15"    
     
 [[routes]]    
-pattern = "abdulshukor.com"    
+pattern = "abdulshukor"    
 custom_domain = true    
     
 [[routes]]    
-pattern = "www.abdulshukor.com"    
+pattern = "www.abdulshukor"    
 custom_domain = true    
     
 [build]    
